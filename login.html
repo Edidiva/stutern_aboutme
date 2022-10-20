@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>About me</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <style>
+    body {
+      text-align: left;
+      background-color: #cbccff;
+      width: 100%;
+      height: auto;
+    }
+    header {
+      color: white;
+      padding: 5px;
+      text-align: center;
+      background-color: #b0a8b9;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 5px;
+      background-color: blue;
+      font-size: 16px;
+    }
+
+    form {
+      margin: 0px;
+      background-color: white;
+      width: 50%;
+      padding: 10px;
+      box-shadow: 5px 10px 10px blue;
+    }
+
+    hr {
+      border-bottom: solid gray;
+    }
+    p {
+      font-size: 14px;
+      color: black;
+    }
+    input {
+      margin: 10px;
+      width: 90%;
+    }
+    .ds {
+      font-size: 14px;
+      color: black;
+    }
+    h1 {
+      color: black;
+      text-align: center;
+      font: 20px;
+    }
+    .container {
+      text-align: center;
+      margin: 10px;
+    }
+    #su {
+      color: white;
+      padding: 1px;
+      background-color: blue;
+      text-align: center;
+      font-size: large;
+    }
+    .fm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 30px;
+    }
+  </style>
+  <body>
+    <header>
+      <a href="index.html">About me</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact me</a>
+    </header>
+    <div class="fm">
+      <form action="">
+        <h1>Login</h1>
+        <div class="ds">
+          <label for="email">Email</label> <br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            style="margin: 10px"
+            required
+          />
+        </div>
+
+        <div class="ds">
+          <label for="Password">Password</label><br />
+          <input type="password" name="password" id="" required />
+        </div>
+
+        <div class="ds">
+          <input type="submit" value="Sign in" />
+        </div>
+        <div class="container">
+          <p>You don't have an account?</p>
+          <a id="su" href="register.html">Sign Up</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
